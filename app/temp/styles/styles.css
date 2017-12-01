@@ -2,13 +2,15 @@
 
 /**
  * 1. Change the default font family in all browsers (opinionated).
- * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 
 html {
   font-family: sans-serif; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
 }
 
 /**
@@ -256,6 +258,7 @@ hr {
 
 button,
 input,
+optgroup,
 select,
 textarea {
   font: inherit; /* 1 */
@@ -806,7 +809,6 @@ a {
 
   .flexbox .row--equal-height-at-medium {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -815,7 +817,6 @@ a {
 .flexbox .row--equal-height-at-medium > div {
   float: none;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -824,7 +825,6 @@ a {
 
   .flexbox .row--equal-height-at-large {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -833,7 +833,6 @@ a {
 .flexbox .row--equal-height-at-large > div {
   float: none;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -992,11 +991,11 @@ a {
 Instead edit gulp/templates/sprite */
 
 .icon {
-      background-image: url('../../assets/images/sprites/sprite-8eb89099.svg');
+      background-image: url('../../assets/images/sprites/sprite-e79e95cc.svg');
     }
 
 .no-svg .icon {
-      background-image: url('../../assets/images/sprites/sprite-8eb89099.png');
+      background-image: url('../../assets/images/sprites/sprite-e79e95cc.png');
     }
 
 .icon--clear-view-escapes {
@@ -1098,7 +1097,6 @@ Instead edit gulp/templates/sprite */
   position: absolute;
   width: 100%;
   z-index: 2;
-  -webkit-transition: background-color .3s ease-out;
   transition: background-color .3s ease-out;
 }
 
@@ -1131,7 +1129,6 @@ Instead edit gulp/templates/sprite */
   left: 50%;
   -webkit-transform: translateX(-50%) scale(.8);
           transform: translateX(-50%) scale(.8);
-  -webkit-transition: -webkit-transform .3s ease-out;
   transition: -webkit-transform .3s ease-out;
   transition: transform .3s ease-out;
   transition: transform .3s ease-out, -webkit-transform .3s ease-out;
@@ -1178,7 +1175,6 @@ Instead edit gulp/templates/sprite */
   background-color: #FFF;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
-  -webkit-transition: -webkit-transform .3s ease-out;
   transition: -webkit-transform .3s ease-out;
   transition: transform .3s ease-out;
   transition: transform .3s ease-out, -webkit-transform .3s ease-out;
@@ -1191,7 +1187,6 @@ Instead edit gulp/templates/sprite */
   width: 20px;
   height: 3px;
   background-color: #FFF;
-  -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
   -webkit-transform-origin: 0 50%;
           transform-origin: 0 50%;
@@ -1207,7 +1202,6 @@ Instead edit gulp/templates/sprite */
   background-color: #FFF;
   -webkit-transform-origin: 0 100%;
           transform-origin: 0 100%;
-  -webkit-transition: -webkit-transform .3s ease-out;
   transition: -webkit-transform .3s ease-out;
   transition: transform .3s ease-out;
   transition: transform .3s ease-out, -webkit-transform .3s ease-out;
@@ -1240,7 +1234,6 @@ Instead edit gulp/templates/sprite */
   opacity: 0;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
   position: relative;
   z-index: -10;
@@ -1346,7 +1339,6 @@ Instead edit gulp/templates/sprite */
 
 .reveal-item {
   opacity: 0;
-  -webkit-transition: all 1.5s ease-out;
   transition: all 1.5s ease-out;
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
@@ -1370,7 +1362,6 @@ Instead edit gulp/templates/sprite */
   visibility: hidden;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
 
